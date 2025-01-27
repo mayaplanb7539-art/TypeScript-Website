@@ -284,7 +284,9 @@ export const setupPlayground = (
 
   // Set up the label for the dropdown
   const versionButton = document.querySelectorAll("#versions > a").item(0)
-  versionButton.innerHTML = "v" + sandbox.ts.version + " <span class='caret'/>"
+  // Adding HTML sanitizer to remove unsafe content.
+  const striptags = require('striptags');
+  versionButton.innerHTML = "v" + striptags(sandbox.ts.version) + " <span class='caret'/>"
   versionButton.setAttribute("aria-label", `Select version of TypeScript, currently ${sandbox.ts.version}`)
 
   // Add the versions to the dropdown
