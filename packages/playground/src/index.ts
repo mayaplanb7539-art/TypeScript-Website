@@ -25,6 +25,7 @@ import type React from "react"
 import { settingsPlugin, getPlaygroundPlugins } from "./sidebar/settings"
 import { hideNavForHandbook, showNavForHandbook } from "./navigation"
 import { createTwoslashInlayProvider } from "./twoslashInlays"
+import striptags from "striptags"
 
 export { PluginUtils } from "./pluginUtils"
 
@@ -285,7 +286,6 @@ export const setupPlayground = (
   // Set up the label for the dropdown
   const versionButton = document.querySelectorAll("#versions > a").item(0)
   // Adding HTML sanitizer to remove unsafe content.
-  const striptags = require('striptags');
   versionButton.innerHTML = "v" + striptags(sandbox.ts.version) + " <span class='caret'/>"
   versionButton.setAttribute("aria-label", `Select version of TypeScript, currently ${sandbox.ts.version}`)
 
