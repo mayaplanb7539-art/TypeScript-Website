@@ -96,7 +96,7 @@ langs.forEach(lang => {
         .replace(/\+/g, "-"),
 
       sortIndex: index,
-      hash: crypto.createHash("md5").update(contents).digest("hex"),
+      hash: crypto.createHash("sha512").update(contents).digest("hex"),
 
       compilerSettings: compiler,
     };
