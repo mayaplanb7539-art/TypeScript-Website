@@ -115,7 +115,7 @@ const Play: React.FC<Props> = (props) => {
         loadingMessage.textContent = ""
 
         const em = document.createElement("em")
-        em.textContent = `(${tsVersion?.replace(/</g, "-")})`
+        em.textContent = `(${tsVersion})`
 
         const latestReleaseLink = document.createElement('a');
         latestReleaseLink.href = `/play?ts=${latestRelease}${document.location.hash}`;
