@@ -64,13 +64,16 @@ export const supportedReleases = ["${supportedVersions.join('", "')}"] as const
 /** A type of all versions **/
 export type ReleaseVersions = "${[possibleBeta, possibleRc, ...versions].join('" | "')}"
 
+/** A type of supported versions **/
+export type SupportedReleaseVersions = "${supportedVersions.join('" | "')}"
+
 /** Release information including dates **/
 export interface ReleaseInfo {
   version: string
   date: string
 }
 
-export const releaseInfo: Record<string, ReleaseInfo> = {
+export const releaseInfo: Record<SupportedReleaseVersions, ReleaseInfo> = {
 ${releaseInfoEntries}
 }
 `
