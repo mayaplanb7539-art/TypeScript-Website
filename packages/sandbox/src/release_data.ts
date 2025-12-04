@@ -5,7 +5,7 @@ export type ReleaseVersions = "3.1.8" | "3.2.4" | "3.3.4000" | "3.4.5" | "3.5.3"
 
 export interface ReleaseInfo {
   version: string
-  date: string
+  date: string | null
 }
 
 export const releaseInfo: Record<ReleaseVersions, ReleaseInfo> = {
