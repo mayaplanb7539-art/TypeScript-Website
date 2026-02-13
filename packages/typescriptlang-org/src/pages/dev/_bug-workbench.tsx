@@ -22,7 +22,7 @@ import { createDefaultMapFromCDN } from "@typescript/vfs"
 import { twoslasher, TwoSlashReturn } from "@typescript/twoslash"
 import { getPlaygroundUrls } from "../../lib/playgroundURLs";
 
-import type * as playgroundPackage from "../../../static/js/playground";
+import type * as playgroundPackage from "../../../public/js/playground";
 
 type TwoSlashReturns = import("@typescript/twoslash").TwoSlashReturn
 
