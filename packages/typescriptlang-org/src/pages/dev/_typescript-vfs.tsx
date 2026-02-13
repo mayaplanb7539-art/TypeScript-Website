@@ -17,7 +17,7 @@ const Index: React.FC<Props> = (props) => {
           <div className="raised content main-content-block">
             <div className="split-fivehundred">
               <h1 style={{ marginTop: "20px" }}>Easy access to the compiler API</h1>
-              <p>TypeScript VFS lets you create a self-contained TypeScript environment entirely under your control. This library is used to power the Playground, and provides the underlying tooling for <Link to="/dev/twoslash">twoslash</Link> code samples.</p>
+              <p>TypeScript VFS lets you create a self-contained TypeScript environment entirely under your control. This library is used to power the Playground, and provides the underlying tooling for <a href="/dev/twoslash">twoslash</a> code samples.</p>
               <p>There are 3 main uses for TypeScript VFS:</p>
               <ul>
                 <li>Creating a TypeScript Program as an entry-point to the compiler API</li>
