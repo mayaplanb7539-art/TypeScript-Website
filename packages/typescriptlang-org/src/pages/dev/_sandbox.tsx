@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { Layout } from "../../components/layout"
 import { withPrefix } from "../../lib/withPrefix"
 
-import "./dev.scss"
+import "./_dev.scss"
 import { Intl } from "../../components/Intl"
 import { DevNav } from "../../components/devNav"
 import { isTouchDevice } from "../../lib/isTouchDevice"

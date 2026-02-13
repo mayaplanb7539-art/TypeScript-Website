@@ -2,7 +2,8 @@ import * as React from "react"
 import { Layout } from "../../components/layout"
 import { withPrefix } from "../../lib/withPrefix"
 
-import "./dev.scss"
+import "./_dev.scss"
+import pluginPreview from "../../assets/plugin-preview.png" with { type: "asset" }
 import { Intl } from "../../components/Intl"
 import { DevNav } from "../../components/devNav"
 
@@ -27,7 +28,7 @@ const Index: React.FC<Props> = (props) => {
             </div>
 
             <div className="fivehundred" style={{ borderLeft: "1px solid gray" }}>
-              <img src={require("../../assets/playground-plugin-preview.png").default} width="100%" alt="Screenshot of the playground showing the plugins tab" />
+              <img src={withPrefix("/assets/playground-plugin-preview.png")} width="100%" alt="Screenshot of the playground showing the plugins tab" />
             </div>
           </div>
 

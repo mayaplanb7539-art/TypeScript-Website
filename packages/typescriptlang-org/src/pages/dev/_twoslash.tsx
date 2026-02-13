@@ -6,7 +6,7 @@ import { createDefaultMapFromCDN } from "@typescript/vfs"
 import { renderers } from "shiki-twoslash"
 import { debounce } from "ts-debounce"
 
-import "./dev.scss"
+import "./_dev.scss"
 import { Intl } from "../../components/Intl"
 import { DevNav } from "../../components/devNav"
 import { isTouchDevice } from "../../lib/isTouchDevice"
