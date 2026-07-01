@@ -803,7 +803,6 @@ $headline-foreground-bg: white;
   }
 
   .migrations {
-    overflow: hidden;
     &.github #migration_title {
       color: white;
     }
@@ -917,7 +916,7 @@ $headline-foreground-bg: white;
 
       .fg {
         font-size: 1.4rem;
-        line-height: 1.6rem;
+        line-height: 1.6;
         width: 370px;
         position: absolute;
         right: 70px;
